@@ -28,5 +28,6 @@ function getTotalSupply() {
 
 mintNFT("Test NFT 1", "This is a test NFT", "https://example.com/1");
 mintNFT("Test NFT 2", "This is another test NFT", "https://example.com/2");
+mintNFT("Test NFT 2", "This is another test NFT 2", "https://example.com/3");
 listNFTs();
 getTotalSupply();
