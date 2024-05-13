@@ -1,0 +1,32 @@
+let nfts = [];
+
+function mintNFT(name, description, imageUrl) {
+  const nft = {
+    name,
+    description,
+    imageUrl,
+    id: nfts.length + 1,
+  };
+  nfts.push(nft);
+  return nft;
+}
+
+
+function listNFTs() {
+  nfts.forEach((nft) => {
+    console.log(`Name: ${nft.name}`);
+    console.log(`Description: ${nft.description}`);
+    console.log(`Image URL: ${nft.imageUrl}`);
+    console.log(`ID: ${nft.id}`);
+    console.log("--------------------");
+  });
+}
+
+function getTotalSupply() {
+  console.log(`Total supply: ${nfts.length}`);
+}
+
+mintNFT("Test NFT 1", "This is a test NFT", "https://example.com/1");
+mintNFT("Test NFT 2", "This is another test NFT", "https://example.com/2");
+listNFTs();
+getTotalSupply();
