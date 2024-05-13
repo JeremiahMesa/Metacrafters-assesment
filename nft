@@ -26,8 +26,8 @@ function getTotalSupply() {
   console.log(`Total supply: ${nfts.length}`);
 }
 
-mintNFT("Test NFT 1", "This is a test NFT", "https://example.com/1");
-mintNFT("Test NFT 2", "This is another test NFT", "https://example.com/2");
-mintNFT("Test NFT 2", "This is another test NFT 2", "https://example.com/3");
+mintNFT("NFT 1", "BEST NFT ", "https://example.com/1");
+mintNFT("NFT 2", "MEDUSA NFT", "https://example.com/2");
+mintNFT("NFT 2", "JEO NFT", "https://example.com/3");
 listNFTs();
 getTotalSupply();
